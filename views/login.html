@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Para centralizar verticalmente */
+        margin: 0;
+      }
+
+      .login-container {
+        text-align: center; /* Centraliza o conteúdo interno */
+      }
+
+      /* Estilo para ícones (opcional) */
+      .icons {
+        margin-top: 20px;
+      }
+      .icons img {
+        width: 32px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Login</h1>
+      <form action="/login" method="post">
+        <label for="username">Nome de usuário:</label><br />
+        <input type="text" id="username" name="username" /><br /><br />
+        <label for="password">Senha:</label><br />
+        <input type="password" id="password" name="password" /><br /><br />
+        <input type="submit" value="Entrar" />
+      </form>
+      <div class="icons">
+        <img src="icone1.png" />
+        <img src="icone2.png" />
+      </div>
+    </div>
+  </body>
+</html>
